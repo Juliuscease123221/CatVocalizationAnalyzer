@@ -1,0 +1,28 @@
+Flask==2.0.3
+Flask-SSLify
+firebase-admin
+google-cloud-secret-manager
+google-cloud-storage
+gunicorn
+
+tqdm
+torch==2.0.1
+torchaudio==2.0.2
+torchsummary==1.5.1
+numpy
+Werkzeug==2.2.2
+
+#pyyaml==5.1
+#librosa
+
+# https://pytorch.org/get-started/previous-versions/
+# workaround: install old version of pytorch since detectron2 hasn't released packages for pytorch 1.9 (issue: https://github.com/facebookresearch/detectron2/issues/3158)
+#torch==1.8.0+cu101 https://download.pytorch.org/whl/torch_stable.html
+#torchvision==0.9.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+#torch==1.10.0 -f https://download.pytorch.org/whl/torch_stable.html
+#torchvision==0.11.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+# install detectron2 that matches pytorch 1.8
+# See https://detectron2.readthedocs.io/tutorials/install.html for instructions
+#detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.8/index.html
+#detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cpu/torch1.10/index.html
